@@ -10,13 +10,13 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(title:Text("HomePage"),//appbar er jonno
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 155, 109, 92),
-        foregroundColor:Colors.white ,//appbar er colors cng hobe
-        //leading: Icon(Icons.home),//home sign ashbe size color cng kora barite
+        foregroundColor:Colors.white ,
+        
         actions: [
           IconButton(onPressed:(){} , icon: Icon(Icons.search)),
           IconButton(onPressed:(){} , icon: Icon(Icons.person)),
 
-        ],//multiple widget use kora jay icon buttons
+        ],
 
         ),
         drawer: Drawer(
@@ -39,15 +39,15 @@ class HomePage extends StatelessWidget {
           ,onTap: (){}),
           ],
           ),
-        ),//aita dile leading cmnt kore rakhbo
+        ),
 
         body:Padding(
           padding: const EdgeInsets.all(10),
           child: Row(
-           // mainAxisAlignment: MainAxisAlignment.end, onno side chole jay
+           
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
-            //mainAxisAlignment: MainAxisAlignment.spaceAround,
+            
             children: [
               TextButton(onPressed: (){}, 
               style: TextButton.styleFrom(
@@ -55,7 +55,7 @@ class HomePage extends StatelessWidget {
                 foregroundColor: const Color.fromARGB(255, 37, 35, 34),
                 fixedSize: Size(100, 20),
                 side: BorderSide()
-                //elevation:10,
+                
                 ),
               
                child: Text("TextButton"),),
